@@ -51,7 +51,7 @@ Ex : Speech Recognition.
 
 Ex : --- input : CGPA and IQ --- And --- Output : Package ---
 
-Now based on the CGPA and the IQ machine learning will pridict the package of the student. Now package will be a numerical output which will be considerd as a Regressesion. 
+Now based on the CGPA and the IQ machine learning will pridict the package of the student. Now package will be a numerical output which will be considerd as a "Regressesion". 
 
 #### 2. Classification : 
 
@@ -60,8 +60,4 @@ Now based on the CGPA and the IQ machine learning will pridict the package of th
 
 Ex : --- Input : Weather forecast --- And --- Output : Condition of the weather ---
 
-- Now the output can be anything like sunny, rainy and so on.. Which is buch of category and we are picking one of them as per the data is called Classification.
-
-
-
-
+- Now the output can be anything like sunny, rainy and so on.. Which is buch of category and we are picking one of them as per the data is called "Classification".
