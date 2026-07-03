@@ -2,11 +2,11 @@
 
 ```Python 
 
-So a machine learning is a method in which we provide data and output so that the machine can train on that data, 
+• So a machine learning is a method in which we provide data and output so that the machine can train on that data, 
 After it trains on that data and we give a new input similar to the data it was trained, it will automatically 
 understand the data and will give us an output.
 
-So in simple terms it trains on data and make an algorithm so that in future, if we have any questions similar to 
+• So in simple terms it trains on data and make an algorithm so that in future, if we have any questions similar to 
 the data it was trained we can have an answer instantly and accurately.
 
 ```
