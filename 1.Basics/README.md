@@ -35,7 +35,8 @@ Ex : Classifying the dog from the cat,dog and an elephant.
 on that data when we are asking questions out of that data and it will still recognise the pattern and accordingly it will 
 give us an output.
 
-Ex : Train a model on the data to do 2 numbers sum. Now after that if we give any 2 numbers to get the sum of it, it will give us an appropriate answer.
+Ex : Train a model on the data to do 2 numbers sum. Now after that if we give any 2 numbers to get the sum of it, it will 
+give us an appropriate answer.
 
 ```
 ---
@@ -44,8 +45,9 @@ Ex : Train a model on the data to do 2 numbers sum. Now after that if we give an
 
 ```Python
 
-• So it is just like the machine learning method but in this the architecture is copied from the human brain. Means the  architecture is complex but accurate + it is mainly used for the big data. Where the ML is used for medium or small data 
-for more accuracy.
+• So it is just like the machine learning method but in this the architecture is copied from the human brain. Means 
+the architecture is complex but accurate + it is mainly used for the big data. Where the ML is used for medium or 
+small data for more accuracy.
 
 Ex : Speech Recognition.
 
