@@ -109,6 +109,8 @@ Example algorithms: Linear Regression, Logistic Regression, Decision Trees
 
 ## Difference between Instance vs Model based Learning
 
+```python
+
 Learning Style
 Instance-Based : Lazy learning, memorizes data, does no work until prediction time
 Model-Based : Eager learning, learns a pattern/equation upfront during training
