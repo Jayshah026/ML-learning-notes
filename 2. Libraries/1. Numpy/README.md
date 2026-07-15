@@ -1,0 +1,114 @@
+# NumPy Array Creation
+
+## Importing NumPy
+```python
+- Use case: NumPy is used for fast numerical computing in Python.
+- It gives us the 'array' object (ndarray) which is much faster and more memory-efficient than a normal Python list.
+
+import numpy as np (To import and use the Numpy we write this line)
+```
+
+## np.array()
+```python
+- Use case: Create an array (1D, 2D, or n-D) from a Python list.
+- This is the most basic way to make a NumPy array.
+
+arr1 = np.array([1, 2, 3, 4, 5])
+print(arr1)
+OUTPUT : array([1, 2, 3, 4, 5])
+
+print(type(arr1))
+OUTPUT : numpy.ndarray
+```
+
+## Creating a 2D array
+```python
+- Use case: Pass a list of lists to np.array() to create a matrix (rows and columns).
+- Useful for representing tables, images, etc.
+
+arr2 = np.array([[1, 2, 3], [4, 5, 6]])
+print(arr2)
+OUTPUT :
+array([[1, 2, 3],
+       [4, 5, 6]])
+```
+
+## np.zeros()
+```python
+- Use case: Create an array filled entirely with 0s.
+- Commonly used to initialize an array/matrix before filling it with real values later (e.g., placeholder for weights in ML).
+
+arr3 = np.zeros((2, 2))
+print(arr3)
+OUTPUT :
+array([[0., 0.],
+       [0., 0.]])
+```
+
+## np.ones()
+```python
+- Use case: Create an array filled entirely with 1s.
+- Useful for initializing bias values, masks, or default weights.
+
+arr4 = np.ones((10, 10))
+print(arr4)
+OUTPUT : a 10x10 matrix where every element is 1.
+```
+
+## np.identity()
+```python
+- Use case: Create an identity matrix (1s on the diagonal, 0s elsewhere).
+- Identity matrices are used a lot in linear algebra, e.g., multiplying by identity gives the same matrix back.
+
+arr5 = np.identity(8)
+print(arr5)
+OUTPUT : 8x8 matrix with 1s on the diagonal, 0s everywhere else.
+```
+
+## np.arange()
+```python
+- Use case: Create an array of numbers within a range, similar to Python's range(), but returns a NumPy array.
+- The end value is excluded.
+
+arr6 = np.arange(11)
+print(arr6)
+OUTPUT : array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+```
+
+## np.arange() with start and stop
+```python
+- Use case: np.arange(start, stop) starts from 'start' and ends before 'stop'.
+
+arr7 = np.arange(1, 6)
+print(arr7)
+OUTPUT : array([1, 2, 3, 4, 5])
+```
+
+## np.arange() with step
+```python
+- Use case: np.arange(start, stop, step) jumps by 'step' each time.
+
+arr8 = np.arange(0, 21, 2)
+print(arr8)
+OUTPUT : array([0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20])
+```
+
+## .copy()
+```python
+- Use case: Create a completely independent copy of an existing array.
+- Important because normal assignment (arr9 = arr6) only creates a reference, not a real copy. .copy() avoids that problem.
+
+arr9 = arr6.copy()
+print(arr9)
+OUTPUT : array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+```
+
+## np.linspace()
+```python
+- Use case: Create 'n' evenly spaced numbers between a start and end value (end value is included).
+- Useful when you need a fixed number of points spread out equally, e.g., for plotting graphs.
+
+arr10 = np.linspace(1, 10, 5)
+print(arr10)
+OUTPUT : array([ 1.  ,  3.25,  5.5 ,  7.75, 10.  ])
+```
