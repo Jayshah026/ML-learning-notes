@@ -275,3 +275,166 @@ array([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]])
 
 ```
+---
+
+
+# NumPy Array Operations
+
+## Element-wise Addition
+```python
+
+- Use case: Adding two arrays adds their elements position by position (both arrays must be the same shape).
+
+- This is much faster than looping through lists manually in plain Python.
+
+arr1 = np.array([1,2,3,4,5])
+arr2 = np.array([6,7,8,9,10])
+
+arr1 + arr2
+
+OUTPUT : array([ 7,  9, 11, 13, 15])
+
+```
+---
+
+## Element-wise Subtraction
+
+```python
+
+- Use case: Subtracts the elements of the second array from the first, position by position.
+
+arr1 - arr2
+
+OUTPUT : array([-5, -5, -5, -5, -5])
+
+```
+---
+
+## Element-wise Multiplication
+
+```python
+
+- Use case: Multiplies the elements of both arrays position by position.
+
+- Note: this is NOT matrix multiplication, just simple element-by-element multiplication.
+
+arr1 * arr2
+
+OUTPUT : array([ 6, 14, 24, 36, 50])
+
+```
+---
+
+## Element-wise Division
+
+```python
+
+- Use case: Divides the elements of the first array by the elements of the second, position by position.
+
+arr1 / arr2
+
+OUTPUT : array([0.16666667, 0.28571429, 0.375, 0.44444444, 0.5])
+
+```
+---
+
+## Scalar Broadcasting
+
+```python
+
+- Use case: When you perform an operation between an array and a single number (scalar), NumPy applies that operation to every element of the array. This is called broadcasting.
+
+arr2 + 5
+
+OUTPUT : array([11, 12, 13, 14, 15])
+
+```
+---
+
+## Comparison between two arrays
+
+```python
+
+- Use case: Comparing two arrays checks each pair of elements position by position and returns a boolean array (True/False) for the result.
+
+arr1 > arr2
+
+OUTPUT : array([False, False, False, False, False])
+
+```
+---
+
+## Comparison with a scalar
+
+```python
+
+- Use case: Comparing an array with a single number checks every element against that number and returns a boolean array.
+
+arr2 > 7
+
+OUTPUT : array([False, False, True, True, True])
+
+```
+---
+## .max() and .min()
+
+```python
+
+- Use case: .max() returns the largest value in the array, .min() returns the smallest value.
+
+- Useful for quickly finding extremes in data without writing a loop.
+
+arr2.max()
+OUTPUT : np.int64(10)
+
+arr2.min()
+OUTPUT : np.int64(6)
+
+```
+---
+
+## .max(axis) and .min(axis) on 2D arrays
+
+```python
+
+- Use case: When used on a 2D array, the axis parameter controls the direction of the operation.
+
+- axis=0 -> works column-wise (compares values going down each column).
+
+- axis=1 -> works row-wise (compares values going across each row).
+
+arr3 = np.array([[1,2,3], [4,5,6], [7,8,9]])
+arr3
+
+OUTPUT :
+array([[1, 2, 3],
+       [4, 5, 6],
+       [7, 8, 9]])
+
+
+arr3.max(axis=0)
+
+OUTPUT : array([7, 8, 9])
+
+arr3.min(axis=1)
+
+OUTPUT : array([1, 4, 7])
+
+```
+---
+## .sum()
+
+```python
+
+- Use case: Adds up all the elements in the array and returns a single total.
+
+- Very handy for quick totals without writing a manual loop.
+
+arr3.sum()
+OUTPUT : np.int64(45)
+
+arr3.min()
+OUTPUT : np.int64(1)
+```
+---
+
