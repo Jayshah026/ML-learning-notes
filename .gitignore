@@ -1,0 +1,21 @@
+# Virtual environments
+venv/
+myvenv/
+mlvenv/
+env/
+*_venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# VS Code (optional — keep if you don't want to share editor settings)
+.vscode/
