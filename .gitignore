@@ -4,6 +4,7 @@ myvenv/
 mlvenv/
 env/
 *_venv/
+all_csv_data/
 
 # Python cache
 __pycache__/
